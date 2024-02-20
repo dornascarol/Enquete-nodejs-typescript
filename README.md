@@ -2,10 +2,12 @@
 <br>
 
 <h2> Este foi o projeto que aprendi no curso da Rocketseat </h2>
-<p> Aplicação onde o usuário faz um voto em uma enquete e o sistema irá anotar a quantidade total de votos naquela opção em tempo real. </p>
+<p> Um sistema de votação onde os usuários podem criar uma enquete e outros usuários podem votar. O sistema gera um ranking entre as opções e atualiza os votos em tempo real. </p>
 
 <h2> Introdução </h2>
 A API vai observar toda vez que houver um novo voto na enquete. Ela vai avisar a minha requisição websocket que houve um novo voto. E esse novo voto vai ser enviado em tempo real para o usuário saber.
+
+Adicionada as opções da votação, em seguida, implementa as rotas de busca pelo ID e a rota do voto na opção selecionada, validando as lógicas de ação do usuário.
 
 ## Tecnologias utilizadas
 * VS Code
