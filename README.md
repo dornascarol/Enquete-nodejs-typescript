@@ -40,6 +40,8 @@ ORM <a href="https://www.npmjs.com/package/@prisma/client" target="_blank" > Pri
 
 Biblioteca <a href="https://www.npmjs.com/package/zod" target="_blank" > Zod </a> na versão 3.22.4 → `npm install zod`
 
+Plugin <a href="https://www.npmjs.com/package/@fastify/cookie" target="_blank"> Fastify/cookie </a> na versão 9.3.1 → `npm i @fastify/cookie`
+
 
 
 ## Dependências de desenvolvimento
