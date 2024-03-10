@@ -21,7 +21,8 @@ Adicionada as opções da votação, em seguida, implementa as rotas de busca pe
 * Redis
 * Docker
 * Hoppscotch
-* 
+* UUID
+* Fastify/cookie
 
 
 ## Ferramentas
@@ -84,6 +85,18 @@ npx prisma init
 ```
 npx prisma migrate dev
 ```
+- Caminho da URL para o Hoppscotch:
+```
+http://localhost:3333/polls
+```
+
+## Endpoints
+
+| Método | URL             | Descrição                                                                                                                                                                                         |
+| ------ | --------------  | ------------------------------------------------------------------------------------------------------                                                                                            |
+| POST   | /polls               | Cria uma enquete usando os parâmetros de título e opções enviadas dentro do arquivo `request.body`.  |
+| GET    | /polls:pollId        | Busca uma enquete pelo `id` que está dentro de `request.params`.  |
+| POST   | /polls/:pollId/votes | Cria o voto de uma opção em alguma enquete específica. O `id` da enquete específica está dentro de `request.params`. E a opção do voto está dentro de `request.body`.  |
 
 
 ## Status do projeto
