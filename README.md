@@ -23,6 +23,7 @@ Adicionada as opções da votação, em seguida, implementa as rotas de busca pe
 * Hoppscotch
 * UUID
 * Fastify/cookie
+* Zod
 
 
 ## Ferramentas
@@ -44,6 +45,8 @@ Biblioteca <a href="https://www.npmjs.com/package/zod" target="_blank" > Zod </a
 Plugin <a href="https://www.npmjs.com/package/@fastify/cookie" target="_blank"> Fastify/cookie </a> na versão 9.3.1 → `npm i @fastify/cookie`
 
 Biblioteca <a href="https://www.npmjs.com/package/ioredis" target="_bank"> Redis </a> na versão 5.3.2 → `npm i ioredis`
+
+Plugin <a href="https://www.npmjs.com/package/@fastify/websocket" target="_blank" > Fastify/websocket </a> na versão 10.0.1 → `npm i @fastify/websocket`
 
 
 ## Dependências de desenvolvimento
