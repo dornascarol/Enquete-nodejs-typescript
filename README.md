@@ -15,7 +15,6 @@ Adicionada as opções da votação, em seguida, implementa as rotas de busca pe
 * NPM
 * TypeScript
 * Fastify
-* Websocket
 * Prisma (ORM)
 * PostgreSQL
 * Redis
@@ -24,6 +23,7 @@ Adicionada as opções da votação, em seguida, implementa as rotas de busca pe
 * UUID
 * Fastify/cookie
 * Zod
+* Fastify/websocket
 
 
 ## Ferramentas
@@ -103,9 +103,10 @@ http://localhost:3333/polls
 
 | Método | URL             | Descrição                                                                                                                                                                                         |
 | ------ | --------------  | ------------------------------------------------------------------------------------------------------                                                                                            |
-| POST   | /polls               | Cria uma enquete usando os parâmetros de título e opções enviadas dentro do arquivo `request.body`.  |
-| GET    | /polls:pollId        | Busca uma enquete pelo `id` que está dentro de `request.params`.  |
-| POST   | /polls/:pollId/votes | Cria o voto de uma opção em alguma enquete específica. O `id` da enquete específica está dentro de `request.params`. E a opção do voto está dentro de `request.body`.  |
+| POST   | /polls                 | HTTP. Cria uma enquete usando os parâmetros de título e opções enviadas dentro do arquivo `request.body`.  |
+| GET    | /polls:pollId          | HTTP. Busca uma enquete pelo `id` que está dentro de `request.params`.  |
+| POST   | /polls/:pollId/votes   | HTTP. Cria o voto de uma opção em alguma enquete específica. O `id` da enquete específica está dentro de `request.params`. E a opção do voto está dentro de `request.body`.  |
+| GET    | /polls/:pollId/results | Websocket. O Front-end envia o `id` que está dentro de `request.params`, o servidor processa, devolve a resposta da mensagem com a quantidade de votos e mantem a conexão aberta em tempo real somente daquela enquete. |
 
 
 ## Status do projeto
