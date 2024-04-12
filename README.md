@@ -43,6 +43,7 @@ Biblioteca <a href="https://www.npmjs.com/package/zod" target="_blank" > Zod </a
 
 Plugin <a href="https://www.npmjs.com/package/@fastify/cookie" target="_blank"> Fastify/cookie </a> na versão 9.3.1 → `npm i @fastify/cookie`
 
+Biblioteca <a href="https://www.npmjs.com/package/ioredis" target="_bank"> Redis </a> na versão 5.3.2 → `npm i ioredis`
 
 
 ## Dependências de desenvolvimento
@@ -56,6 +57,11 @@ ORM <a href="https://www.npmjs.com/package/prisma" target="_blank" > Prisma </a>
 
 
 ## Rodando o projeto
+- Clone o repositório
+- Instalar dependências:
+```
+npm install
+```
 - Pra inicar escreva no terminal:
 ```
 npm init -y
@@ -100,4 +106,4 @@ http://localhost:3333/polls
 
 
 ## Status do projeto
-:construction: Aplicação em andamento.
+:heavy_check_mark: Aplicação finalizada.
